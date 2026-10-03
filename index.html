@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Shopify Genius — Professional Shopify Store Design & Development in Pakistan.">
+<meta name="theme-color" content="#05070d">
+<title>Shopify Genius | Shopify Store Design & Development</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap');
+:root{--bg:#05070d;--panel:#0b0f18;--panel2:#101621;--text:#f5f7fb;--muted:#98a2b3;--line:rgba(255,255,255,.09);--accent:#7c5cff;--accent2:#22d3ee;--green:#25d366}
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font-family:"DM Sans",sans-serif;line-height:1.6;overflow-x:hidden}
+a{color:inherit;text-decoration:none}.container{width:min(1160px,92%);margin:auto}
+.nav{height:78px;display:flex;align-items:center;justify-content:space-between;position:relative;z-index:5}
+.logo{font-family:"Space Grotesk";font-weight:700;font-size:22px;letter-spacing:-.8px}.logo span{color:var(--accent2)}
+.navlinks{display:flex;gap:30px;color:#b8c0ce;font-size:14px}.navlinks a:hover{color:white}
+.navcta,.btn{display:inline-flex;align-items:center;justify-content:center;border-radius:12px;padding:12px 18px;font-weight:700;font-size:14px;transition:.25s}
+.navcta{background:white;color:#07090e}.navcta:hover,.btn.primary:hover{transform:translateY(-2px)}
+.hero{min-height:calc(100vh - 78px);display:flex;align-items:center;position:relative;padding:80px 0 100px}
+.glow{position:absolute;filter:blur(80px);border-radius:50%;pointer-events:none;opacity:.45}
+.g1{width:360px;height:360px;background:#5b3df5;top:60px;right:-120px}.g2{width:280px;height:280px;background:#0891b2;bottom:0;left:-150px}
+.eyebrow{display:inline-flex;border:1px solid var(--line);background:rgba(255,255,255,.035);padding:7px 11px;border-radius:999px;color:#cbd5e1;font-size:12px;font-weight:600;margin-bottom:22px}
+.dot{width:7px;height:7px;border-radius:50%;background:#25d366;margin-right:8px;box-shadow:0 0 12px #25d366}
+.hero h1{font-family:"Space Grotesk";font-size:clamp(48px,7vw,86px);line-height:.98;letter-spacing:-4px;max-width:900px}
+.gradient{background:linear-gradient(90deg,#fff,#9eeeff 45%,#9278ff);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p{max-width:670px;color:var(--muted);font-size:18px;margin:25px 0 32px}
+.actions{display:flex;gap:12px;flex-wrap:wrap}.btn{padding:14px 20px}.btn.primary{background:white;color:#07090e}.btn.secondary{border:1px solid var(--line);background:rgba(255,255,255,.04)}.btn.secondary:hover{background:rgba(255,255,255,.09)}
+.trust{display:flex;gap:28px;margin-top:52px;color:#8490a2;font-size:13px;flex-wrap:wrap}.trust strong{display:block;color:white;font-size:21px;font-family:"Space Grotesk"}
+.section{padding:105px 0}.section-head{display:flex;justify-content:space-between;gap:30px;align-items:end;margin-bottom:45px}.kicker{color:#8ea1ff;text-transform:uppercase;letter-spacing:2px;font-size:11px;font-weight:700}.section h2{font-family:"Space Grotesk";font-size:clamp(34px,5vw,52px);line-height:1.05;letter-spacing:-2px;margin-top:10px}.section-head p{color:var(--muted);max-width:420px}
+.services{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.service{padding:26px;border:1px solid var(--line);background:linear-gradient(180deg,#0c111b,#080c13);border-radius:18px;min-height:185px;transition:.25s}.service:hover{transform:translateY(-5px);border-color:rgba(124,92,255,.45)}.icon{width:42px;height:42px;border-radius:12px;display:grid;place-items:center;background:linear-gradient(135deg,#1b2240,#101722);margin-bottom:20px;font-size:19px}.service h3{font-size:17px;margin-bottom:8px}.service p{color:var(--muted);font-size:13px}
+.workgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}.work{border:1px solid var(--line);background:var(--panel);border-radius:22px;overflow:hidden;transition:.3s}.work:hover{transform:translateY(-5px);border-color:rgba(34,211,238,.3)}
+.preview{height:280px;position:relative;overflow:hidden;background:#111827}.preview iframe{width:160%;height:160%;transform:scale(.625);transform-origin:top left;border:0;pointer-events:none;background:white}.overlay{position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,0) 40%,rgba(5,7,13,.9) 100%);pointer-events:none}.workinfo{padding:22px}.worktop{display:flex;justify-content:space-between;gap:15px;align-items:start}.work h3{font-family:"Space Grotesk";font-size:22px}.tag{font-size:11px;color:#c4b9ff;border:1px solid rgba(124,92,255,.35);background:rgba(124,92,255,.1);padding:5px 8px;border-radius:999px;white-space:nowrap}.workinfo p{color:var(--muted);font-size:13px;margin:8px 0 18px}.visit{color:#fff;font-size:13px;font-weight:700}.visit span{color:var(--accent2);margin-left:5px}
+.about{display:grid;grid-template-columns:1.1fr .9fr;gap:50px;align-items:center}.aboutcopy p{color:var(--muted);margin-top:20px;font-size:16px}.aboutbox{border:1px solid var(--line);background:linear-gradient(145deg,#11172a,#090d15);border-radius:24px;padding:30px}.aboutbox .mini{display:flex;justify-content:space-between;padding:17px 0;border-bottom:1px solid var(--line);font-size:14px}.aboutbox .mini:last-child{border-bottom:0}.aboutbox span{color:var(--muted)}
+.process{display:grid;grid-template-columns:repeat(5,1fr);gap:10px}.step{padding:24px 18px;border-top:1px solid var(--line)}.num{color:#7c5cff;font-family:"Space Grotesk";font-size:13px;font-weight:700}.step h3{margin:14px 0 7px}.step p{color:var(--muted);font-size:13px}
+.cta{padding:70px 0}.cta-card{position:relative;overflow:hidden;border:1px solid var(--line);border-radius:28px;padding:65px;text-align:center;background:radial-gradient(circle at 50% 0%,rgba(124,92,255,.22),transparent 45%),#0b1019}.cta-card h2{font-family:"Space Grotesk";font-size:clamp(35px,5vw,58px);letter-spacing:-2px}.cta-card p{color:var(--muted);margin:15px auto 25px;max-width:580px}.wa{background:var(--green);color:#06200e}
+footer{border-top:1px solid var(--line);padding:35px 0;color:#7f8998;font-size:13px}.foot{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}.foot strong{color:white}
+.floatwa{position:fixed;right:22px;bottom:22px;width:58px;height:58px;border-radius:50%;background:var(--green);color:#06200e;display:grid;place-items:center;font-size:25px;box-shadow:0 12px 35px rgba(37,211,102,.3);z-index:20}
+@media(max-width:900px){.services{grid-template-columns:repeat(2,1fr)}.process{grid-template-columns:repeat(2,1fr)}.about{grid-template-columns:1fr}.section-head{display:block}.section-head p{margin-top:15px}.navlinks{display:none}}
+@media(max-width:650px){.hero{padding-top:55px}.hero h1{letter-spacing:-2.5px}.hero p{font-size:16px}.trust{margin-top:38px}.services,.workgrid{grid-template-columns:1fr}.preview{height:230px}.process{grid-template-columns:1fr}.cta-card{padding:45px 22px}.navcta{padding:10px 13px;font-size:12px}.section{padding:75px 0}}
+</style>
+</head>
+<body>
+<header class="container nav">
+<a class="logo" href="#">SHOPIFY <span>GENIUS</span></a>
+<nav class="navlinks"><a href="#work">Work</a><a href="#services">Services</a><a href="#process">Process</a><a href="#about">About</a></nav>
+<a class="navcta" href="https://wa.me/923360799766?text=Hi%20Shopify%20Genius%2C%20I%20want%20to%20build%20a%20Shopify%20store.">WhatsApp Me</a>
+</header>
+
+<main>
+<section class="hero">
+<div class="glow g1"></div><div class="glow g2"></div>
+<div class="container">
+<div class="eyebrow"><span class="dot"></span> Available for Shopify projects</div>
+<h1>BUILD A SHOPIFY STORE <span class="gradient">THAT SELLS.</span></h1>
+<p>Professional Shopify store design & development for brands and businesses that want a premium online presence — built for desktop, mobile and real customers.</p>
+<div class="actions"><a class="btn primary" href="#work">View My Work ↗</a><a class="btn secondary" href="https://wa.me/923360799766?text=Hi%20Shopify%20Genius%2C%20I%20want%20to%20discuss%20a%20Shopify%20project.">Start a Project on WhatsApp</a></div>
+<div class="trust"><div><strong>06+</strong>Shopify stores built</div><div><strong>100%</strong>Custom focused</div><div><strong>Mobile</strong>First approach</div></div>
+</div>
+</section>
+
+<section class="section" id="work">
+<div class="container">
+<div class="section-head"><div><div class="kicker">Selected work</div><h2>Real stores.<br>Real Shopify builds.</h2></div><p>Explore selected Shopify projects built across ecommerce categories including fashion, beauty, accessories and general retail.</p></div>
+<div class="workgrid">
+<article class="work"><div class="preview"><iframe src="https://www.mbmobileaccessories.com/" loading="lazy" title="MB Mobile Accessories"></iframe><div class="overlay"></div></div><div class="workinfo"><div class="worktop"><h3>MB Mobile Accessories</h3><span class="tag">Electronics</span></div><p>Mobile accessories and tech ecommerce store with product-focused shopping experience.</p><a class="visit" href="https://www.mbmobileaccessories.com/" target="_blank" rel="noopener">Visit live store <span>↗</span></a></div></article>
+<article class="work"><div class="preview"><iframe src="https://usmankhaddar.shop/" loading="lazy" title="Usman Khaddar House"></iframe><div class="overlay"></div></div><div class="workinfo"><div class="worktop"><h3>Usman Khaddar House</h3><span class="tag">Fashion</span></div><p>Pakistani fashion ecommerce store focused on khaddar and winter collections.</p><a class="visit" href="https://usmankhaddar.shop/" target="_blank" rel="noopener">Visit live store <span>↗</span></a></div></article>
+<article class="work"><div class="preview"><iframe src="https://oneclickmarket.store/" loading="lazy" title="One Click Market"></iframe><div class="overlay"></div></div><div class="workinfo"><div class="worktop"><h3>One Click Market</h3><span class="tag">Ecommerce</span></div><p>General ecommerce storefront designed for product discovery and online purchasing.</p><a class="visit" href="https://oneclickmarket.store/" target="_blank" rel="noopener">Visit live store <span>↗</span></a></div></article>
+<article class="work"><div class="preview"><iframe src="https://lumorapkofficial.com/" loading="lazy" title="Lumora"></iframe><div class="overlay"></div></div><div class="workinfo"><div class="worktop"><h3>LUMORA</h3><span class="tag">Beauty</span></div><p>Herbal skincare ecommerce experience built around a clean product-led presentation.</p><a class="visit" href="https://lumorapkofficial.com/" target="_blank" rel="noopener">Visit live store <span>↗</span></a></div></article>
+<article class="work"><div class="preview"><iframe src="https://elitetimeline.myshopify.com/" loading="lazy" title="Elite Time Line"></iframe><div class="overlay"></div></div><div class="workinfo"><div class="worktop"><h3>Elite Time Line</h3><span class="tag">Lifestyle</span></div><p>Brand storefront with a clean ecommerce layout and product-focused browsing.</p><a class="visit" href="https://elitetimeline.myshopify.com/" target="_blank" rel="noopener">Visit live store <span>↗</span></a></div></article>
+<article class="work"><div class="preview"><iframe src="https://arvonpk.myshopify.com/" loading="lazy" title="Arvon"></iframe><div class="overlay"></div></div><div class="workinfo"><div class="worktop"><h3>Arvon</h3><span class="tag">Ecommerce</span></div><p>Shopify storefront created for a branded ecommerce shopping experience.</p><a class="visit" href="https://arvonpk.myshopify.com/" target="_blank" rel="noopener">Visit live store <span>↗</span></a></div></article>
+</div>
+</div>
+</section>
+
+<section class="section" id="services">
+<div class="container">
+<div class="section-head"><div><div class="kicker">What I do</div><h2>Shopify, from idea<br>to launch.</h2></div><p>Everything you need to turn a product catalog into a professional ecommerce experience.</p></div>
+<div class="services">
+<div class="service"><div class="icon">✦</div><h3>Shopify Store Development</h3><p>Complete store setup, structure, navigation and ecommerce configuration.</p></div>
+<div class="service"><div class="icon">◈</div><h3>Theme Customization</h3><p>Customize your Shopify theme to match your brand and customer journey.</p></div>
+<div class="service"><div class="icon">▦</div><h3>Product & Collection Setup</h3><p>Organized products, collections and storefront merchandising.</p></div>
+<div class="service"><div class="icon">⌁</div><h3>Custom Sections</h3><p>Build custom Liquid sections and branded storefront features.</p></div>
+<div class="service"><div class="icon">↗</div><h3>Mobile-First Design</h3><p>Responsive experiences that look polished on phones, tablets and desktops.</p></div>
+<div class="service"><div class="icon">◉</div><h3>Conversion UX</h3><p>Clear product pages, calls-to-action and shopping flows designed around usability.</p></div>
+<div class="service"><div class="icon">☏</div><h3>WhatsApp Integration</h3><p>Connect customers directly to your business for questions and order leads.</p></div>
+<div class="service"><div class="icon">⚡</div><h3>Store Optimization</h3><p>Improve layout, content structure and storefront experience before launch.</p></div>
+</div>
+</div>
+</section>
+
+<section class="section" id="about">
+<div class="container about">
+<div class="aboutcopy"><div class="kicker">About Shopify Genius</div><h2>Not just a website.<br>A storefront for your brand.</h2><p>Shopify Genius focuses on building clean, modern and practical Shopify stores for businesses that want to sell online professionally. Every project is approached around brand presentation, usability and a smooth customer journey.</p><p>Based in Faisalabad, Pakistan, I work with businesses that need a Shopify store built, redesigned or customized.</p></div>
+<div class="aboutbox">
+<div class="mini"><span>Service</span><strong>Shopify Development</strong></div>
+<div class="mini"><span>Location</span><strong>Faisalabad, Pakistan</strong></div>
+<div class="mini"><span>Contact</span><strong>+92 336 0799 766</strong></div>
+<div class="mini"><span>Office</span><strong>Saifabad, Jhang Rd</strong></div>
+</div>
+</div>
+</section>
+
+<section class="section" id="process">
+<div class="container">
+<div class="section-head"><div><div class="kicker">Simple process</div><h2>From brief to<br>live store.</h2></div></div>
+<div class="process">
+<div class="step"><div class="num">01</div><h3>Discuss</h3><p>Understand your business, products and goals.</p></div>
+<div class="step"><div class="num">02</div><h3>Plan</h3><p>Structure collections, pages and customer flow.</p></div>
+<div class="step"><div class="num">03</div><h3>Build</h3><p>Design and develop the Shopify storefront.</p></div>
+<div class="step"><div class="num">04</div><h3>Test</h3><p>Check mobile, desktop and store functionality.</p></div>
+<div class="step"><div class="num">05</div><h3>Launch</h3><p>Final review, handover and go live.</p></div>
+</div>
+</div>
+</section>
+
+<section class="cta">
+<div class="container"><div class="cta-card"><div class="kicker">Have a Shopify project?</div><h2>LET'S BUILD YOUR STORE.</h2><p>Tell me what you’re selling and what you want your store to look like. We’ll discuss the next step on WhatsApp.</p><a class="btn wa" href="https://wa.me/923360799766?text=Hi%20Shopify%20Genius%2C%20I%20want%20to%20build%20a%20Shopify%20store.">Chat on WhatsApp →</a></div></div>
+</section>
+</main>
+
+<footer><div class="container foot"><div><strong>SHOPIFY GENIUS</strong> — Shopify Store Design & Development</div><div>Shop P-49, 1st Floor, Saifabad, Jhang Rd, Faisalabad</div></div></footer>
+<a class="floatwa" href="https://wa.me/923360799766?text=Hi%20Shopify%20Genius%2C%20I%20want%20to%20discuss%20a%20Shopify%20project." aria-label="WhatsApp">◔</a>
+</body>
+</html>

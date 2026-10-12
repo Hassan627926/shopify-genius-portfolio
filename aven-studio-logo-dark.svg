@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="140" viewBox="0 0 600 140" role="img" aria-labelledby="title desc">
+<title id="title">Aven Studio</title>
+<desc id="desc">A geometric A monogram and Aven Digital Studio wordmark in ivory and jade.</desc>
+<g fill="none" stroke-linecap="round" stroke-linejoin="round">
+<path d="M18 122 72 18" stroke="#F4F0E7" stroke-width="11"/>
+<path d="m72 18 54 104" stroke="#9BCDB8" stroke-width="11"/>
+<path d="M48 80h48" stroke="#F4F0E7" stroke-width="10"/>
+</g>
+<text x="164" y="83" fill="#F4F0E7" font-family="Space Grotesk, Avenir Next, Arial, sans-serif" font-size="68" font-weight="600" letter-spacing="5">AVEN</text>
+<text x="170" y="119" fill="#98A2B3" font-family="DM Sans, Avenir Next, Arial, sans-serif" font-size="16" font-weight="500" letter-spacing="5">DIGITAL STUDIO</text>
+</svg>
